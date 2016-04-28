@@ -1,0 +1,102 @@
+html {
+  font-size: 1px;
+  background-color: #222;
+  color: #642;
+}
+
+body {
+  font-family: 'Rye', cursive;
+  font-size: 18rem;
+}
+
+body .bg {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 100px 40px 40px;
+  pointer-events: none;
+  background-image: url('/images/codeo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: transparent;
+  opacity: 0.4;
+}
+
+.container {
+  z-index: 1;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+h1 {
+  font-size: 50rem;
+}
+h2 {
+  font-size: 28rem;
+}
+h1, h2, h3 {
+  margin: 0;
+  text-transform: uppercase;
+}
+.container_header {
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.container_header_hero {
+  margin: 1em 0;
+}
+.container_content {
+  color: #963;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #666;
+  flex-direction: row;
+}
+
+.container_content_section {
+  margin: auto;
+}
+
+.container_content_section h2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+.scores {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.scores_item {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.6em 2em;
+  border-top: 1px solid #424;
+}
+.scores_item:nth-child(2n+1) {
+  background-color: rgba(100,0,255,0.05);
+}
+.scores_item_entry {
+}
+.scores_item_score {
+  min-width: 60px;
+  text-align:right;
+}
+.scores-item_team {
+  min-width: 200px;
+}
+
+@media (max-width: 700px) {
+  .container_content {
+    flex-direction: column;
+  }
+  .container_content_section:last-child {
+    margin-bottom: 40px;
+  }
+}

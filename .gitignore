@@ -1,0 +1,8 @@
+.env
+.idea/*
+.byebug_history
+
+# emacs temp files
+*~
+\.\#*
+\#*

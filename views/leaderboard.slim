@@ -1,0 +1,27 @@
+html
+  head
+    link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'
+    link href='https://fonts.googleapis.com/css?family=Smokum' rel='stylesheet' type='text/css'
+    link href='stylesheets/application.css' rel='stylesheet' type='text/css'
+  body
+    .bg
+    .container
+      .container_header
+        h1.container_header_hero Codeo 2016
+      .container_content
+        .container_content_section.container_content_section--tally
+          h2 Standing
+
+          ul.scores
+            - @scores.each do |team, score|
+              li.scores_item
+                .scores_item_entry.scores_item_team = team
+                .scores_item_entry.scores_item_score = score
+        .container_content_section.container_content_section--morale
+          h2 Morale
+
+          ul.scores
+            - @morales.each do |team, score|
+              li.scores_item
+                .scores_item_entry.scores_item_team = team
+                .scores_item_entry.scores_item_score = score

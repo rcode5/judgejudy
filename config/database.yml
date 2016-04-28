@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  username: postgres
+  database: pardner_development
+test:
+  adapter: postgresql
+  username: postgres
+  database: pardner_test
+# production database config is in environments.rb
